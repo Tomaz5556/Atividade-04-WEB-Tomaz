@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Oswald, Verdana, Sans-serif;
+    color: #b0ffbe;
+    background-color: #283928;
+}
+
+#principal,
+aside,
+section#postagens .postagem,
+section#titulo-capa {
+    text-align: center;
+}
+
+#conteudo,
+footer,
+header {
+    display: flex;
+}
+
+fieldset,
+footer #identificacao {
+    text-align: left;
+}
+
+footer ul,
+nav ul {
+    list-style: none;
+}
+
+a:hover {
+    color: #FFB74D;
+}
+
+h2,
+h3,
+h4 {
+    color: #FFB74D;
+    padding: 5px;
+}
+
+a:active,
+a:link,
+a:visited {
+    color: #b0ffbe;
+    text-decoration: none;
+    padding: 5px;
+}
+
+strong {
+    color: #FFB74D;
+}
+
+header {
+    background-color: #574C0A;
+    font-family: cursive, Helvetica, sans-serif;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+header #logo {
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 45px;
+    color: #b0ffbe;
+}
+
+nav ul {
+    padding-top: 25px;
+}
+
+footer li,
+nav ul li {
+    display: inline;
+}
+
+nav ul li a:link {
+    margin-right: 30px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #574C0A;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #283928;
+}
+
+
+#conteudo {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#area-central {
+    width: 100%;
+}
+
+section#titulo-capa {
+    color: #FFB74D;
+    margin: 20px 10px;
+    font-size: 20px;
+}
+
+section#postagens {
+    margin: 10px;
+}
+
+section#postagens .postagem h2 {
+    font-family: "Lucida Console", Helvetica, sans-serif;
+    text-align: center;
+}
+
+section#postagens .postagem {
+    border-top: 2px solid #FFB74D;
+    padding: 20px 0;
+}
+
+section#postagens .postagem p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+section#postagens .postagem img {
+    width: 630px;
+}
+
+aside {
+    width: 400px;
+    margin-top: 15px;
+}
+
+aside .secao-aside .postagem-aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+aside img {
+    margin: auto 5px;
+    width: 350px;
+    height: 170px;
+}
+
+aside section {
+    padding: 20px 0;
+    border-bottom: 2px solid #FFB74D;
+    margin: 10px;
+}
+
+section.secao-aside ul {
+    padding-left: 30px;
+    margin: 10px;
+    text-align: left;
+}
+
+.minha-lista {
+    list-style-type: disc;
+}
+
+.sub-lista {
+    list-style-type: square;
+}
+
+#form-cadastro input {
+    margin-bottom: 15px;
+    color: #b0ffbe;
+}
+
+#form-cadastro .input-label {
+    position: absolute;
+    left: 20px;
+    background-color: transparent;
+}
+
+fieldset {
+    position: relative;
+    padding: 15px;
+    margin: 5px;
+    border-color: #574C0A;
+    border-width: thin;
+}
+
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    color: #fff;
+    background-color: transparent;
+    outline: #867215 solid 2px;
+}
+
+.input-label {
+    position: absolute;
+    left: 20px;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+}
+
+.input:focus+.input-label,
+.input:valid+.input-label {
+    transform: translate(10px, -14px) scale(.8);
+    padding-inline: 5px;
+    color: #b0ffbe;
+    background-color: #181414;
+}
+
+.input:is(:focus, :valid) {
+    outline-color: #574C0A;
+}
+
+textarea {
+    outline: #b0ffbe solid 2px;
+}
+
+footer {
+    background-color: #663E00;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+@media (max-width: 1130px) {
+
+    body {
+        display: grid;
+    }
+    
+    #conteudo {
+        width: 100%;
+    }
+
+    header {
+        display: grid;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    header ul li {
+        font-size: 20px;
+    }
+
+    #conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 650px;
+    }
+
+    aside img {
+        width: 300px;
+    }
+
+    .input-label {
+        left: 168px;
+    }
+
+    aside .secao-aside .postagem-aside {
+        display: grid;
+        justify-content: space-around;
+    }
+
+    footer {
+        font-size: 24px;
+    }
+
+    footer #contatos {
+        display: table;
+    }
+
+    footer #contatos ul {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+
+    footer #contatos ul li a img {
+        width: 60px;
+    }
+}
