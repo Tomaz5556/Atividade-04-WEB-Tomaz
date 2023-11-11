@@ -1,2 +1,2 @@
 # Tomaz Martins Batista
-Aprofundamento nos aspectos da linguagem CSS
+Atividade HTML para Disciplina Desenvolvimento WEB - Aprofundamento nos aspectos da linguagem CSS
